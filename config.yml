@@ -1,0 +1,18 @@
+title: Introduction to Golang
+description: >-
+  In this course, you will learn the fundamentals of the Go programming language
+  and also understand it in comparison to other programming languages. 
+template:
+  repo: introduction-to-golang-template
+  name: introduction-to-golang
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
